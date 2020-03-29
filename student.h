@@ -1,7 +1,5 @@
 #ifndef STUDENT_H_INCLUDED
 #define STUDENT_H_INCLUDED
-#include<iostream>
-using namespace std;
 
 class Student {
 	friend class StudentClass;
@@ -19,9 +17,9 @@ public:
 	void setname();
 	void showid() { cout << "id:" << id_; }
 	void showname() { cout << "name:" << name_; }
-	bool AddCourse(const std::string& courseName, double grade);                     //·µ»ØÊÇ·ñ³É¹¦
-	void SetGrade(const std::string& courseName, double grade);                      //ÐÎ²ÎÊý¿Î³ÌÃû£¬·ÖÊý£¬·ÂÕÕÉÏÃæµÄÉùÃ÷
-	double GetGrade(const std::string& courseName) const;                             //ÐÎ²ÎÎª¿Î³ÌÃû
+	bool AddCourse(const std::string& courseName, double grade);                     //è¿”å›žæ˜¯å¦æˆåŠŸ
+	void SetGrade(const std::string& courseName, double grade);                      //å½¢å‚æ•°è¯¾ç¨‹åï¼Œåˆ†æ•°ï¼Œä»¿ç…§ä¸Šé¢çš„å£°æ˜Ž
+	double GetGrade(const std::string& courseName) const;                             //å½¢å‚ä¸ºè¯¾ç¨‹å
 	double GetAverageGrade() const;
 	void ShowGrades() const;
 };
